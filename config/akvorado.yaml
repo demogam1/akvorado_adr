@@ -43,7 +43,7 @@ clickhouse:
     - clickhouse:9000
   prometheus-endpoint: /metrics
   asns:
-    64501: ACME Corporation
+    15557: SFR
   networks:
     # You should customize this section with your networks. This
     # populates the Src/DstNetName/Role/Site/Region/Tenant fields.
