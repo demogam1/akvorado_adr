@@ -23,7 +23,7 @@ core:
     # your exporters are named.
     - ClassifySiteRegex(Exporter.Name, "^([^-]+)-", "$1")
     - ClassifyRegion("europe")
-    - ClassifyTenant("acme")
+    - ClassifyTenant("babolat")
     - ClassifyRole("edge")
   interface-classifiers:
     # This is an example. This must be customized depending on the

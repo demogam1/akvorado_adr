@@ -48,17 +48,59 @@ clickhouse:
     # You should customize this section with your networks. This
     # populates the Src/DstNetName/Role/Site/Region/Tenant fields.
     10.0.0.0/24:
-      name: ipv4-sfr
-      role: sfr
-    10.0.1.0/24:
-      name: ipv4-sfr
-      role: sfr
-    2a01:db8:cafe:1::/64:
-      name: ipv6-customers
-      role: customers
-    2a01:db8:cafe:2::/64:
-      name: ipv6-servers
-      role: servers
+      name: Default
+      role: default
+    10.0.12.0/24:
+      name: Focus
+      role: focus
+    10.0.251.0/24:
+      name: Focus IOT
+      role: focus iot
+    10.250.0.0/16:
+      name: Guest
+      role: guest
+    10.0.14.0/24:
+      name: S03 -
+      role: s03
+    10.0.2.0/24:
+      name: S07 Human Elite
+      role: s07 human elite
+    10.0.3.0/24:
+      name: N03 Financeal
+      role: n03 financeal
+    10.0.4.0/24:
+      name: N06 ZTHT
+      role: n06 zhtht
+    10.0.6.0/24:
+      name: S01 - Gaminho
+      role: s01 gaminho
+    10.0.8.0/24:
+      name: N05 - Epalia
+      role: n05 epalia
+    10.0.10.0/24:
+      name: S04 Unisoap
+      role: s04 unisoap
+    10.0.7.0/24:
+      name: S05 Ipokrat
+      role: s05 ipokrat
+    10.0.9.0/24:
+      name: S06 Athribis
+      role: s06 athribis
+    10.0.13.0/24:
+      name: N02
+      role: n02
+    10.0.16.0/24:
+      name: N06 Bis - Samia M...
+      role: n06 bis samia m
+    10.0.20.0/24:
+      name: N06 Digit Only
+      role: n06 digit only
+    10.0.28.0/24:
+      name: N04-5 Huggy R...
+      role: n04-5 huggy r
+    10.0.29.0/24:
+      name: S06 Silyane
+      role: s06 silyane
   network-sources: []
     # amazon:
     #   url: https://ip-ranges.amazonaws.com/ip-ranges.json
