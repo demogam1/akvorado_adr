@@ -34,4 +34,8 @@ core:
       ClassifyConnectivityRegex(Interface.Description, "^(?i)(transit|pni|ppni|ix):? ", "$1") &&
       ClassifyProviderRegex(Interface.Description, "^\\S+?\\s(\\S+)", "$1") &&
       ClassifyExternal()
+    - Interface.Description matches "(?i)wan" && ClassifyExternal()
+    - Interface.Description matches "(?i)guest" && ClassifyInternal() && ClassifyProvider("guest")
+    - Interface.Description matches "(?i)iot" && ClassifyInternal() && ClassifyProvider("iot")
+    - Interface.Description matches "(?i)vlan" && ClassifyInternal()
     - ClassifyInternal()
